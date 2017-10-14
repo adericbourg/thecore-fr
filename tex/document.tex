@@ -1,0 +1,45 @@
+\documentclass[a4paper,pagesize=pdftex,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[protrusion=true,final]{microtype}
+
+\usepackage[pdftex]{hyperref}
+\makeatletter
+\AtBeginDocument{
+  \hypersetup{
+    pdftitle = {\@title},
+    pdfauthor = {\@author}
+  }
+}
+\makeatother
+
+\author{Jim McCarthy, Michele McCarthy}
+\title{Les Protocoles Fondamentaux v3.03}
+\date{}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{McCarthy Technologies, Inc.}
+\lfoot{Version 3.03}
+\cfoot{}
+\rfoot{\thepage}
+
+\begin{document}
+
+\maketitle
+
+\noindent \textbf{Les Protocoles Fondamentaux} (\emph{The Core Protocols}) version 3.03
+
+\noindent Copyright \copyright{} Jim McCarthy et Michele McCarthy
+
+\noindent Les Fondamentaux (\emph{The Core}) est distribué selon les termes de la GNU General Public Licence telle que publiée par la Free Software
+Foundation, soit dans sa version 3 ou (à votre convenance) dans toute version ultérieure. Pour le contenu exact, voir
+\url{http://www.gnu.org/licenses/}. \emph{The Core} est considéré comme un code source en vertu de cet accord. Chacun est autorisé
+à copier et distribuer des copies conformes ou modifiées de ce contenu à condition que vous distribuiez également celui-ci
+dans son intégralité en incluant ce paragraphe.
+
+\end{document}
