@@ -1,0 +1,17 @@
+name: LaTeX build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: tex/document.tex
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+
